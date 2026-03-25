@@ -33,7 +33,7 @@ class AuthService {
 
     async generateToken(payload) {
         const claveSecreta = process.env.JWT_SECRET || 'clave_desarrollo';
-        return jwt.sign(payload, claveSecreta, { expiresIn: '1h' }); // ✅ usa claveSecreta
+        return jwt.sign(payload, claveSecreta, { expiresIn: '1h' });
     }
 
 }
