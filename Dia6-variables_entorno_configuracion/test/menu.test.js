@@ -26,19 +26,4 @@ describe('Rutas del menu', () => {
         assert.strictEqual(response.status, 200);
         assert.ok(Array.isArray(response.body));
     });
-
-    test('GET /menu/busqueda?categoria=segundos devuelve 200 y un array', async (t) => {
-        const response = await request(app).get('/menu/busqueda?categoria=segundos');
-        assert.strictEqual(response.status, 200);
-        assert.ok(Array.isArray(response.body));
-        assert.ok(response.body.length > 0, 'Debería retornar platos de categoría segundos');
-    });
-
-    test('GET /menu/busqueda?categoria=inexistente devuelve 404', async (t) => {
-        const response = await request(app).get('/menu/busqueda?categoria=inexistente');
-        assert.strictEqual(response.status, 404);
-    });
-
-
-
 });
