@@ -93,8 +93,26 @@ import { JwtPayload } from "jsonwebtoken";
 // INTERFACES — Autenticación y middleware
 // ─────────────────────────────────────────────────────────
 // Extendemos Request para incluir el payload del token
-export interface AuthRequest extends Request {
-    user?: JwtPayload | string
+
+export interface RestaurantePayload {
+    email: string // único campo que pone el restaurante
+    iat?: number  // issued at — lo agrega JWT automáticamente
+    exp?: number  // // expiration — lo agrega JWT automáticamente
 }
+
+export function esRestaurantePayload(valor: unknown): valor is RestaurantePayload {
+    return (
+        typeof valor === 'object' &&
+        valor !== null &&
+        typeof (valor as RestaurantePayload).email === 'string'
+    )
+}
+
+export interface AuthRequest extends Request {
+    user?: RestaurantePayload // más preciso que JwtPayload | string
+}
+
+
+
 
 

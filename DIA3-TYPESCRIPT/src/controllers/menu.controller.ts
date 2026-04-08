@@ -40,7 +40,7 @@ export const crearPlato = async (req: Request<{}, {}, CreatePlatoDto>, res: Resp
         const plato = await platoService.crear(req.body);
         res.status(201).json(plato);
     } catch (error: unknown) {
-        const mensaje = error instanceof Error ? error.message : 'Error desconocido';
+        const mensaje = error instanceof Error ? error.message : 'Error interno';
         res.status(500).json({ error: 'Error al crear Plato' });
     }
 }
@@ -94,7 +94,7 @@ export const filtrarPorCategoria = async (req: Request<{ cat: string }>, res: Re
         const platos = await platoService.buscarPorCategoria(req.params.cat);
         res.status(200).json(platos);
     } catch (error: unknown) {
-        const mensaje = error instanceof Error ? error.message : 'Error desconocido';
+        const mensaje = error instanceof Error ? error.message : 'Error interno';
         res.status(500).json({ error: 'Error al obtener al filtrar platos por categoria' });
     }
 }
