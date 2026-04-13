@@ -1,14 +1,32 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Post, Put, Delete, Param, Body, Patch } from '@nestjs/common';
+import { PlatosService } from './platos.service';
 
 @Controller('api/platos')
 export class PlatosController {
+    constructor(private readonly platosService: PlatosService) { }
     @Get()
     findAll() {
-        return [
-            { id: 1, nombre: "Lomo saltado", precio: 35, categoria: "Segundos" },
-            { id: 2, nombre: "Ceviche", precio: 42, categoria: "Entradas" },
+        return this.platosService.findAll();// delegada el servicio
+    }
 
-        ];
+    @Get(':id')
+    findOne(@Param('id') id: string) {
+        return this.platosService.findOne(id);
+    }
+
+    @Post()
+    create(@Body() createPlatoDto: any) {
+        return this.platosService.create(createPlatoDto);
+    }
+
+    @Patch(':id')
+    update(@Param('id') id: string, @Body() updatePlatoDto: any) {
+        return this.platosService.update(id, updatePlatoDto);
+    }
+
+    @Delete(':id')
+    remove(@Param('id') id: string) {
+        return this.platosService.remove(id);
     }
 
 }
