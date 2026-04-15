@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { PlatosModule } from './platos/platos.module';
+import { MesasModule } from './mesas/mesas.module';
 
 @Module({
   imports: [
@@ -17,6 +18,7 @@ import { PlatosModule } from './platos/platos.module';
       }),
     }),
     PlatosModule,
+    MesasModule,
   ],
 })
 export class AppModule { }
