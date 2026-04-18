@@ -47,7 +47,7 @@ export class MesasService {
     }
 
     async update(id: string, dto: any) {
-        const { estado, pedidoActivoId, ...datosPermitidos } = dto;
+        const { estado, ...datosPermitidos } = dto;
         const mesa = await this.mesaModel.findByIdAndUpdate(id, datosPermitidos, { new: true }).exec();
         if (!mesa) throw new NotFoundException(`Mesa con ID ${id} no encontrada`);
         return mesa;

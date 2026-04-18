@@ -11,6 +11,7 @@ import { Mesa, MesaSchema } from './mesa.schema';
     ])
   ],
   controllers: [MesasController],
-  providers: [MesasService]
+  providers: [MesasService],
+  exports: [MesasService]
 })
 export class MesasModule { }

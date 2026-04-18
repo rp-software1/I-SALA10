@@ -11,6 +11,8 @@ import { Plato, PlatoSchema } from './plato.schema';
     ])
   ],
   controllers: [PlatosController],
-  providers: [PlatosService]
+  providers: [PlatosService],
+  exports: [PlatosService]
 })
 export class PlatosModule { }
+
