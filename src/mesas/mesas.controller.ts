@@ -1,5 +1,6 @@
-import { Controller, Get, Post, Body, Param, Patch, Query } from '@nestjs/common';
+import { Controller, Get, Post, Body, Param, Patch, Query, UseGuards } from '@nestjs/common';
 import { MesasService } from './mesas.service';
+import { JwtAuthGuard } from 'src/auth/jwt-auth.guards';
 
 @Controller('api/mesas')
 export class MesasController {
@@ -8,6 +9,7 @@ export class MesasController {
 
 
     @Patch(':id/estado')
+    @UseGuards(JwtAuthGuard)
     cambiarEstado(@Param('id') id: string, @Body() body: { estado: string }) {
         return this.mesasService.cambiarEstado(id, body.estado);
     }
@@ -16,13 +18,13 @@ export class MesasController {
     findAll(@Query('estado') estado?: string) {
         return this.mesasService.findAll(estado);
     }
-
     @Get(':id')
     findOne(@Param('id') id: string) {
         return this.mesasService.findOne(id);
     }
 
     @Post()
+    @UseGuards(JwtAuthGuard)
     create(@Body() dto: any) {
         return this.mesasService.create(dto);
     }
