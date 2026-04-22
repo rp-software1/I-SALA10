@@ -4,6 +4,8 @@ import { JwtService } from '@nestjs/jwt';
 import { Model } from 'mongoose';
 import * as bcrypt from 'bcrypt';
 import { Usuario, UsuarioDocument } from './auth.schema';
+import { RegisterDto } from './dto/register.dto';
+import { LoginDto } from './dto/login.dto';
 
 
 
@@ -14,7 +16,7 @@ export class AuthService {
         private readonly jwtService: JwtService
     ) { }
 
-    async register(dto: { name: string, email: string, password: string }) {
+    async register(dto: RegisterDto) {
         const existe = await this.usuarioModel.findOne({ email: dto.email });
         if (existe) throw new ConflictException('El email ya está registrado');
 
@@ -31,7 +33,7 @@ export class AuthService {
 
     }
 
-    async login(dto: { email: string, password: string }) {
+    async login(dto: LoginDto) {
         const usuario = await this.usuarioModel.findOne({ email: dto.email });
         if (!usuario) throw new UnauthorizedException('Credenciales inválidas');
 

@@ -1,13 +1,21 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
+import { ValidationPipe } from '@nestjs/common';
+import { HttpExceptionFilter } from './common/http-exception.filter';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+
+  // PRIMERO: Filtros globales
+  app.useGlobalFilters(new HttpExceptionFilter());
+
+  // SEGUNDO: Pipes globales
+  app.useGlobalPipes(new ValidationPipe({
+    whitelist: true,
+    forbidNonWhitelisted: true,
+    transform: true,
+  }));
+
   await app.listen(process.env.PORT ?? 3000);
 }
 bootstrap();
-
-// Equivalente Express que ya conocen:
-// const app = express();
-// app.listen(3000);
-

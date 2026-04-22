@@ -2,6 +2,8 @@ import { BadRequestException, Injectable, NotFoundException } from '@nestjs/comm
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { Mesa, MesaDocument } from './mesa.schema';
+import { CreateMesaDto } from './dto/create-mesa.dto';
+import { EstadoMesaDto } from './dto/estado-mesa.dto';
 
 
 @Injectable()
@@ -17,18 +19,18 @@ export class MesasService {
         'fuera_de_servicio': ['disponible']
     };
 
-    async cambiarEstado(id: string, nuevoEstado: string) {
+    async cambiarEstado(id: string, dto: EstadoMesaDto) {
         const mesa = await this.findOne(id);
         const estadoActual = mesa.estado;
         const permitidas = this.transaccionValidas[estadoActual] ?? [];
 
-        if (!permitidas.includes(nuevoEstado)) {
-            throw new BadRequestException(`Transición: ${estadoActual} -> ${nuevoEstado} no esta permitida` +
+        if (!permitidas.includes(dto.estado)) {
+            throw new BadRequestException(`Transición: ${estadoActual} -> ${dto.estado} no esta permitida` +
                 `Transiciones validas desde : ${estadoActual} : ${permitidas.join(', ')}`
             );
         }
 
-        return this.mesaModel.findByIdAndUpdate(id, { estado: nuevoEstado }, { new: true }).exec();
+        return this.mesaModel.findByIdAndUpdate(id, { estado: dto.estado }, { new: true }).exec();
     }
 
     findAll(estado?: string) {
@@ -42,7 +44,7 @@ export class MesasService {
         return mesa;
     }
 
-    create(dto: any) {
+    create(dto: CreateMesaDto) {
         return new this.mesaModel({ ...dto, estado: 'disponible' }).save();
     }
 

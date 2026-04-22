@@ -2,6 +2,8 @@ import { Controller, Post, Body, Param, Patch, Get, Query } from '@nestjs/common
 import { PedidosService } from './pedidos.service';
 import { UseGuards } from '@nestjs/common';
 import { JwtAuthGuard } from 'src/auth/jwt-auth.guards';
+import { CreatePedidoDto } from './dto/create.pedido.dto';
+import { AddItemDto } from './dto/add.item.dto';
 
 @Controller('api/pedidos')
 export class PedidosController {
@@ -9,13 +11,13 @@ export class PedidosController {
 
     @Post()
     @UseGuards(JwtAuthGuard)
-    create(@Body() dto: { mesaId?: string, tipoPedido: string }) {
+    create(@Body() dto: CreatePedidoDto) {
         return this.pedidosService.create(dto);
     }
 
     @Post(':id/items')
     @UseGuards(JwtAuthGuard)
-    addItem(@Param('id') id: string, @Body() body: { platoId: string, cantidad: number }) {
+    addItem(@Param('id') id: string, @Body() body: AddItemDto) {
         return this.pedidosService.addItem(id, body);
     }
 

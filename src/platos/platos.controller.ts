@@ -1,5 +1,6 @@
 import { Controller, Get, Post, Delete, Param, Body, Patch } from '@nestjs/common';
 import { PlatosService } from './platos.service';
+import { CreatePlatoDto } from './dto/create.plato.dto';
 
 @Controller('api/platos')
 export class PlatosController {
@@ -15,7 +16,7 @@ export class PlatosController {
     }
 
     @Post()
-    create(@Body() createPlatoDto: any) {
+    create(@Body() createPlatoDto: CreatePlatoDto) {
         return this.platosService.create(createPlatoDto);
     }
 
