@@ -1,8 +1,8 @@
 import { Controller, Get, Post, Body, Param, Patch, Query, UseGuards } from '@nestjs/common';
 import { MesasService } from './mesas.service';
-import { JwtAuthGuard } from 'src/auth/jwt-auth.guards';
-import { CreateMesaDto } from './dto/create-mesa.dto';
 import { EstadoMesaDto } from './dto/estado-mesa.dto';
+import { CreateMesaDto } from './dto/create-mesa.dto';
+import { JwtAuthGuard } from '../auth/jwt-auth.guards';
 
 @Controller('api/mesas')
 export class MesasController {

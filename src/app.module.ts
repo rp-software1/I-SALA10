@@ -5,6 +5,7 @@ import { PlatosModule } from './platos/platos.module';
 import { MesasModule } from './mesas/mesas.module';
 import { PedidosModule } from './pedidos/pedidos.module';
 import { AuthModule } from './auth/auth.module';
+import { TicketsModule } from './tickets/tickets.module';
 
 @Module({
   imports: [
@@ -23,6 +24,7 @@ import { AuthModule } from './auth/auth.module';
     MesasModule,
     PedidosModule,
     AuthModule,
+    TicketsModule,
   ],
 })
 export class AppModule { }

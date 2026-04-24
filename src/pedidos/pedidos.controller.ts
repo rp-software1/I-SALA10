@@ -1,7 +1,7 @@
 import { Controller, Post, Body, Param, Patch, Get, Query } from '@nestjs/common';
 import { PedidosService } from './pedidos.service';
 import { UseGuards } from '@nestjs/common';
-import { JwtAuthGuard } from 'src/auth/jwt-auth.guards';
+import { JwtAuthGuard } from '../auth/jwt-auth.guards';
 import { CreatePedidoDto } from './dto/create.pedido.dto';
 import { AddItemDto } from './dto/add.item.dto';
 

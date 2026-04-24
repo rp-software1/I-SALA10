@@ -30,7 +30,7 @@ export class Pedido {
     tipoPedido: string;
 
     @Prop({
-        required: true, enum: ["pendiente", "en_preparacion", "lista", "entregada", "cancelada"],
+        required: true, enum: ["pendiente", "en_preparacion", "lista", "entregada", "cancelada", "cerrada"],
         default: "pendiente"
     })
     estadoPedido: string;

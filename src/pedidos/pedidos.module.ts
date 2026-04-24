@@ -3,8 +3,8 @@ import { PedidosController } from './pedidos.controller';
 import { PedidosService } from './pedidos.service';
 import { MongooseModule } from '@nestjs/mongoose';
 import { Pedido, PedidoSchema } from './pedido.schema';
-import { MesasModule } from 'src/mesas/mesas.module';
-import { PlatosModule } from 'src/platos/platos.module';
+import { MesasModule } from '../mesas/mesas.module';
+import { PlatosModule } from '../platos/platos.module';
 
 @Module({
   imports: [
@@ -16,6 +16,7 @@ import { PlatosModule } from 'src/platos/platos.module';
 
   ],
   controllers: [PedidosController],
-  providers: [PedidosService]
+  providers: [PedidosService],
+  exports: [PedidosService],
 })
 export class PedidosModule { }

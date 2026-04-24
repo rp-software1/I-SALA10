@@ -14,7 +14,8 @@ export class HttpExceptionFilter implements ExceptionFilter {
         const response = ctx.getResponse<Response>();
         const request = ctx.getRequest<Request>();
 
-        //  1. ERROR DE MONGOOSE (ObjectId inválido)
+        console.error(exception); // 👈 IMPORTANTE (ver error real)
+
         if (exception.name === 'CastError') {
             return response.status(HttpStatus.BAD_REQUEST).json({
                 statusCode: 400,
@@ -25,7 +26,6 @@ export class HttpExceptionFilter implements ExceptionFilter {
             });
         }
 
-        // 2. ERRORES CONTROLADOS (HttpException)
         if (exception instanceof HttpException) {
             const status = exception.getStatus();
             const res = exception.getResponse();
@@ -45,10 +45,10 @@ export class HttpExceptionFilter implements ExceptionFilter {
             });
         }
 
-        //CUALQUIER OTRO ERROR (fallback)
+        // 👇 NO lo elimines, mejor déjalo así
         return response.status(HttpStatus.INTERNAL_SERVER_ERROR).json({
             statusCode: 500,
-            message: 'Error interno del servidor',
+            message: exception.message || 'Error interno del servidor',
             error: 'Internal Server Error',
             timestamp: new Date().toISOString(),
             path: request.url,
