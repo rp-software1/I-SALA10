@@ -28,7 +28,7 @@ describe('Restaurante NestJS - Integración', () => {
     it("POST /auth/register → 201 con usuario sin password", async () => {
       const res = await request(app.getHttpServer())
         .post("/auth/register")
-        .send({ name: "Mesero Test", email: "test5258@rest.com", password: "123456" });
+        .send({ name: "Mesero Test", email: "test5259@rest.com", password: "123456" });
 
       expect(res.status).toBe(201);
       expect(res.body.password).toBeUndefined();
@@ -37,14 +37,14 @@ describe('Restaurante NestJS - Integración', () => {
     it("POST /auth/register email duplicado → 409", async () => {
       const res = await request(app.getHttpServer())
         .post("/auth/register")
-        .send({ name: "Otro", email: "test5258@rest.com", password: "123456" });
+        .send({ name: "Otro", email: "test5259@rest.com", password: "123456" });
       expect(res.status).toBe(409);
     });
 
     it("POST /auth/login → 200 con access_token", async () => {
       const res = await request(app.getHttpServer())
         .post("/auth/login")
-        .send({ email: "test5258@rest.com", password: "123456" });
+        .send({ email: "test5259@rest.com", password: "123456" });
       expect(res.status).toBe(200);
       expect(res.body.accessToken).toBeDefined();
       token = res.body.accessToken;
@@ -53,7 +53,7 @@ describe('Restaurante NestJS - Integración', () => {
     it("POST /auth/login contraseña incorrecta → 401", async () => {
       const res = await request(app.getHttpServer())
         .post("/auth/login")
-        .send({ email: "test5258@rest.com", password: "incorrecta" });
+        .send({ email: "test5259@rest.com", password: "incorrecta" });
       expect(res.status).toBe(401);
     });
   });

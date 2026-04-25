@@ -20,7 +20,7 @@ export class Ticket {
     @Prop({ default: 0 })
     total: number;
 
-    @Prop({ required: true, enum: ['Efectivo', 'Tarjeta', 'Yape'] })
+    @Prop({ required: true, enum: ['efectivo', 'tarjeta', 'yape'] })
     metodoPago: string;
 }
 

@@ -4,6 +4,6 @@ export class CreateTicketDto {
     @IsMongoId()
     pedidoId: string;
 
-    @IsIn(["efectivo", "yape"])
+    @IsIn(["efectivo", "tarjeta", "yape"])
     metodoPago: string;
 }

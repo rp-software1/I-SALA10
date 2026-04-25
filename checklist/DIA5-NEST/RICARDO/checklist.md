@@ -9,10 +9,10 @@ sala: I-SALA10
 
 ## Secciones
 
-- [ ] A — TicketModule + Schema + POST /api/tickets (cierra comanda + libera mesa)
-- [ ] B — GET /api/tickets/:id + DTO + validaciones
-- [ ] C — Testing: 2 tests de integración del flujo completo
-- [ ] D — Deploy en Railway + verificación final
+- [X] A — TicketModule + Schema + POST /api/tickets (cierra comanda + libera mesa)
+- [X] B — GET /api/tickets/:id + DTO + validaciones
+- [X] C — Testing: 2 tests de integración del flujo completo
+- [X] D — Deploy en Railway + verificación final
 - [ ] E — Evaluación entre pares
 - [ ] F — Cierre del sprint
 
