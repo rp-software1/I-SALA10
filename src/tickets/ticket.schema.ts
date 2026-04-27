@@ -20,7 +20,7 @@ export class Ticket {
     @Prop({ default: 0 })
     total: number;
 
-    @Prop({ required: true })
+    @Prop({ required: true, type: String })
     metodoPago: string;
 }
 
