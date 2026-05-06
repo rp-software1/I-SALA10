@@ -14,9 +14,9 @@ loom:
 
 \## Bloques
 
-\- \[ ] VIDEOS
+\- \[X] VIDEOS
 
-\- \[ ] A — comandos
+\- \[X] A — comandos
 
 \- \[ ] B — permisos + variables + procesos
 
