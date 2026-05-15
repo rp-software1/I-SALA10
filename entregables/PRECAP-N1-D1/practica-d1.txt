@@ -1,0 +1,14 @@
+
+ helpers.js:
+
+module.exports = { calcularCostoTotal}
+
+function calcularCostoTotal(precioBase, cantidad){
+    return  precioBase * cantidad
+}
+
+main.js:
+
+const {calcularCostoTotal} = require ('./helpers.js');
+const resultado = calcularCostoTotal(150,3);
+console.log(resultado)

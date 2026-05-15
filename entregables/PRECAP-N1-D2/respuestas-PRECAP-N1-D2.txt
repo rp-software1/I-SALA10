@@ -1,0 +1,67 @@
+¿ Que es Docker?
+
+Es un proyecto de código abierto que automatiza el despliegue de aplicaciones dentro de los
+contenedores de software  , proporcionando una capa adicional de abstracción y automatización
+de virtualización de aplicaciones en multiples sistemas operativos.
+
+Concepcepto MEjorado es : Correr mi aplicación en todas partes sin complicaciones.
+
+Virtualización y Contenedores
+
+Virtualización: Es una tecnología que permite crear servicios de IT útiles , con recursos que están tradicionalmente limitaciones del
+hadware.
+Contenedores: Son una abstracción en la capa de aplicación  que empaqueta el código y las dependencias juntos.
+
+Diferente Virtualizaciones y Contenedores.
+
+Contendores: Capa Inferaestructura , Cualquier Sistema operativo , Capa de aplicación que seria doker donde puede correr diferente aplicaciones y no necesita aislar ciertos recursos de hadware .
+
+Virtualización: Capa de Infraestructura , Capa Hypervisor , mas capa de los necesarias para correr mi aplicación sin tener encuenta de los sistemas operativos que necesitan para que funcione bien.
+
+Instalación de Docker
+
+Docker Desktop: Permite crear compartir aplicaiones en servicios contenedores
+Docker Engine: Es un engin o un motoro cual de permite correr contenedores.
+Play with Docker :  es una solución basada en navegador que permite ejecutar comandos de Docker y ejecutar contenedores.
+
+Hola Mundo
+docker run hello-world
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+4f55086f7dd0: Pull complete 
+d5e71e642bf5: Download complete 
+Digest: sha256:f9078146db2e05e794366b1bfe584a14ea6317f44027d10ef7dad65279026885
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+Conceptos sobre los contenedores
+
+Estados Contenedores:
+Create , Running  , Restartsting , Exited , Paused , Dead 
+
+
+Imágenes en contenedores
+Colección ordenada de cambio de un sistema de un archivo
+
+Docklife , Doker image ,  Docker Container 
+
