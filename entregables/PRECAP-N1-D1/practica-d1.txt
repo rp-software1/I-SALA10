@@ -1,14 +1,278 @@
+whoami
+ricardo
 
- helpers.js:
+pwd
+/mnt/c/Users/ricar/precap-nivel1/entregables/PRECAP-N1-D1
 
-module.exports = { calcularCostoTotal}
+date
+Fri May  1 11:28:56 -05 2026
 
-function calcularCostoTotal(precioBase, cantidad){
-    return  precioBase * cantidad
-}
+ls -la ~ && ls -la /etc/
+total 36
+drwxr-x--- 4 ricardo ricardo 4096 May  6 15:24 .
+drwxr-xr-x 3 root    root    4096 Apr 29 13:41 ..
+-rw------- 1 ricardo ricardo 2309 May 11 11:31 .bash_history
+-rw-r--r-- 1 ricardo ricardo  220 Apr 29 13:41 .bash_logout
+-rw-r--r-- 1 ricardo ricardo 3771 Apr 29 13:41 .bashrc
+drwx------ 2 ricardo ricardo 4096 Apr 29 13:41 .cache
+-rw-r--r-- 1 ricardo ricardo   59 May  6 15:24 .gitconfig
+-rw-rw-r-- 1 ricardo ricardo    0 May 11 11:21 .motd_shown
+-rw-r--r-- 1 ricardo ricardo  807 Apr 29 13:41 .profile
+-rw-r--r-- 1 ricardo ricardo    0 Apr 29 13:56 .sudo_as_admin_successful
+drwxr-xr-x 2 ricardo ricardo 4096 May  1 11:34 practica-precap
+total 820
+drwxr-xr-x 88 root root       4096 May 11 11:32 .
+drwxr-xr-x 22 root root       4096 May 11 11:21 ..
+-rw-------  1 root root          0 Feb  9 19:54 .pwd.lock
+-rw-r--r--  1 root root        862 Feb  9 19:54 .resolv.conf.systemd-resolved.bak
+-rw-r--r--  1 root root        208 Feb  9 19:54 .updated
+drwxr-xr-x  2 root root       4096 Apr 29 13:58 PackageKit
+drwxr-xr-x  7 root root       4096 Feb  9 19:56 X11
+-rw-r--r--  1 root root       3444 Jul  5  2023 adduser.conf
+drwxr-xr-x  2 root root       4096 Feb  9 19:56 alternatives
+drwxr-xr-x  2 root root       4096 Apr 29 13:58 apparmor
+drwxr-xr-x  9 root root      12288 Apr 29 13:58 apparmor.d
+drwxr-xr-x  3 root root       4096 Feb  9 19:56 apport
+drwxr-xr-x  8 root root       4096 Feb  9 19:56 apt
+-rw-r--r--  1 root root       2319 Mar 31  2024 bash.bashrc
+-rw-r--r--  1 root root         45 Jan 24  2020 bash_completion
+drwxr-xr-x  2 root root       4096 Feb  9 19:56 bash_completion.d
+-rw-r--r--  1 root root        367 Aug  2  2022 bindresvport.blacklist
+drwxr-xr-x  2 root root       4096 Apr 19  2024 binfmt.d
+drwxr-xr-x  2 root root       4096 Feb  9 19:56 byobu
+drwxr-xr-x  3 root root       4096 Feb  9 19:54 ca-certificates
+-rw-r--r--  1 root root       6288 Feb  9 19:55 ca-certificates.conf
+drwxr-xr-x  5 root root       4096 Apr 29 13:58 cloud
+drwxr-xr-x  2 root root       4096 Feb  9 19:55 console-setup
+drwx------  2 root root       4096 Apr 19  2024 credstore
+drwx------  2 root root       4096 Apr 19  2024 credstore.encrypted
+drwxr-xr-x  2 root root       4096 Feb  9 19:55 cron.d
+drwxr-xr-x  2 root root       4096 Feb  9 19:56 cron.daily
+drwxr-xr-x  2 root root       4096 Feb  9 19:54 cron.hourly
+drwxr-xr-x  2 root root       4096 Feb  9 19:54 cron.monthly
+drwxr-xr-x  2 root root       4096 Feb  9 19:56 cron.weekly
+drwxr-xr-x  2 root root       4096 Feb  9 19:54 cron.yearly
+-rw-r--r--  1 root root       1136 Mar 30  2024 crontab
+drwxr-xr-x  4 root root       4096 Feb  9 19:54 dbus-1
+drwxr-xr-x  3 root root       4096 Feb  9 19:56 dconf
+-rw-r--r--  1 root root       2967 Apr 12  2024 debconf.conf
+-rw-r--r--  1 root root         11 Apr 22  2024 debian_version
+drwxr-xr-x  2 root root       4096 Feb  9 19:56 default
+-rw-r--r--  1 root root       1706 Jul  5  2023 deluser.conf
+drwxr-xr-x  2 root root       4096 May  2 09:17 depmod.d
+drwxr-xr-x  3 root root       4096 Feb  9 19:55 dhcp
+-rw-r--r--  1 root root       1429 Mar 31  2024 dhcpcd.conf
+drwxr-xr-x  4 root root       4096 Feb  9 19:55 dpkg
+-rw-r--r--  1 root root        685 Apr  8  2024 e2scrub.conf
+-rw-r--r--  1 root root        106 Feb  9 19:54 environment
+drwxr-xr-x  2 root root       4096 Feb  9 19:56 environment.d
+-rw-r--r--  1 root root       1853 Oct 17  2022 ethertypes
+drwxr-xr-x  4 root root       4096 Feb  9 19:56 fonts
+-rw-r--r--  1 root root         37 Feb  9 19:54 fstab
+-rw-r--r--  1 root root        694 Apr  8  2024 fuse.conf
+-rw-r--r--  1 root root       2584 Jan 30  2024 gai.conf
+drwxr-xr-x  3 root root       4096 Feb  9 19:56 glvnd
+drwxr-xr-x  2 root root       4096 Apr 29 13:58 gnutls
+-rw-r--r--  1 root root       3986 Dec  3 10:01 gprofng.rc
+drwxr-xr-x  2 root root       4096 Feb  9 19:56 groff
+-rw-r--r--  1 root root        772 Apr 29 13:41 group
+-rw-r--r--  1 root root        736 Apr 29 13:41 group-
+-rw-r-----  1 root shadow      657 Apr 29 13:41 gshadow
+-rw-r-----  1 root shadow      621 Apr 29 13:41 gshadow-
+drwxr-xr-x  3 root root       4096 Feb  9 19:54 gss
+drwxr-xr-x  2 root root       4096 Feb  9 19:56 gtk-3.0
+-rw-r--r--  1 root root         92 Apr 22  2024 host.conf
+-rw-r--r--  1 root root         12 May 11 11:21 hostname
+-rw-r--r--  1 root root        419 May 11 11:21 hosts
+drwxr-xr-x  2 root root       4096 May  2 09:17 init.d
+-rw-r--r--  1 root root       1875 Mar 31  2024 inputrc
+drwxr-xr-x  4 root root       4096 Feb  9 19:55 iproute2
+-rw-r--r--  1 root root         26 Feb  6 02:23 issue
+-rw-r--r--  1 root root         19 Feb  6 02:23 issue.net
+drwxr-xr-x  4 root root       4096 Feb  9 19:54 kernel
+drwxrwxr-x  2 root landscape  4096 Apr 29 13:39 landscape
+-rw-r--r--  1 root root      18187 May 11 11:21 ld.so.cache
+-rw-r--r--  1 root root         34 Aug  2  2022 ld.so.conf
+drwxr-xr-x  2 root root       4096 Apr 29 13:39 ld.so.conf.d
+drwxr-xr-x  2 root root       4096 Feb  9 19:56 ldap
+-rw-r--r--  1 root root        267 Apr 22  2024 legal
+-rw-r--r--  1 root root        191 Mar 30  2024 libaudit.conf
+-rw-r--r--  1 root root       2996 Mar 30  2024 locale.alias
+-rw-r--r--  1 root root         13 Feb  9 19:55 locale.conf
+-rw-r--r--  1 root root       9565 Feb  9 19:55 locale.gen
+lrwxrwxrwx  1 root root         32 May 11 11:21 localtime -> /usr/share/zoneinfo/America/Lima
+drwxr-xr-x  3 root root       4096 Feb  9 19:55 logcheck
+-rw-r--r--  1 root root      12345 Feb 22  2024 login.defs
+-rw-r--r--  1 root root        586 Apr  8  2024 logrotate.conf
+drwxr-xr-x  2 root root       4096 Apr 29 13:58 logrotate.d
+-rw-r--r--  1 root root        104 Feb  6 02:22 lsb-release
+-r--r--r--  1 root root         33 Apr 29 13:39 machine-id
+-rw-r--r--  1 root root        111 Mar 31  2024 magic
+-rw-r--r--  1 root root        111 Mar 31  2024 magic.mime
+-rw-r--r--  1 root root       5230 Apr  8  2024 manpath.config
+-rw-r--r--  1 root root      75113 Jul 12  2023 mime.types
+-rw-r--r--  1 root root        744 Apr  8  2024 mke2fs.conf
+drwxr-xr-x  2 root root       4096 May  2 09:17 modprobe.d
+-rw-r--r--  1 root root        212 Feb  9 19:55 modules
+drwxr-xr-x  2 root root       4096 Apr 29 13:58 modules-load.d
+lrwxrwxrwx  1 root root         19 Feb  9 19:54 mtab -> ../proc/self/mounts
+-rw-r--r--  1 root root      11424 May 23  2023 nanorc
+-rw-r--r--  1 root root        767 Mar 30  2024 netconfig
+drwxr-xr-x  2 root root       4096 Apr 18  2024 netplan
+drwxr-xr-x  4 root root       4096 Feb  9 19:55 network
+drwxr-xr-x  8 root root       4096 Feb  9 19:54 networkd-dispatcher
+-rw-r--r--  1 root root         91 Apr 22  2024 networks
+drwxr-xr-x  2 root root       4096 Feb  9 19:55 newt
+-rw-r--r--  1 root root        526 Feb  9 19:55 nsswitch.conf
+drwxr-xr-x  2 root root       4096 Feb  9 19:54 opt
+lrwxrwxrwx  1 root root         21 Feb  6 02:23 os-release -> ../usr/lib/os-release
+-rw-r--r--  1 root root        552 Oct 13  2022 pam.conf
+drwxr-xr-x  2 root root       4096 Apr 29 13:58 pam.d
+-rw-r--r--  1 root root       1428 Apr 29 13:41 passwd
+-rw-r--r--  1 root root       1425 Apr 29 13:41 passwd-
+drwxr-xr-x  3 root root       4096 Feb  9 19:55 perl
+drwxr-xr-x  3 root root       4096 Feb  9 19:56 pm
+drwxr-xr-x  3 root root       4096 Feb  9 19:56 polkit-1
+-rw-r--r--  1 root root        582 Apr 22  2024 profile
+drwxr-xr-x  2 root root       4096 Apr 29 13:58 profile.d
+-rw-r--r--  1 root root       3144 Oct 17  2022 protocols
+drwxr-xr-x  2 root root       4096 Feb  9 19:55 python3
+drwxr-xr-x  2 root root       4096 Apr 29 13:58 python3.12
+drwxr-xr-x  2 root root       4096 Feb  9 19:56 rc0.d
+drwxr-xr-x  2 root root       4096 Feb  9 19:55 rc1.d
+drwxr-xr-x  2 root root       4096 Feb  9 19:56 rc2.d
+drwxr-xr-x  2 root root       4096 Feb  9 19:56 rc3.d
+drwxr-xr-x  2 root root       4096 Feb  9 19:56 rc4.d
+drwxr-xr-x  2 root root       4096 Feb  9 19:56 rc5.d
+drwxr-xr-x  2 root root       4096 Feb  9 19:56 rc6.d
+drwxr-xr-x  2 root root       4096 Feb  9 19:56 rcS.d
+lrwxrwxrwx  1 root root         20 May 11 11:32 resolv.conf -> /mnt/wsl/resolv.conf
+lrwxrwxrwx  1 root root         13 Apr  8  2024 rmt -> /usr/sbin/rmt
+-rw-r--r--  1 root root        911 Oct 17  2022 rpc
+-rw-r--r--  1 root root       1213 Mar 21  2024 rsyslog.conf
+drwxr-xr-x  2 root root       4096 Apr 29 13:58 rsyslog.d
+drwxr-xr-x  4 root root       4096 Apr 29 13:58 security
+drwxr-xr-x  2 root root       4096 Feb  9 19:54 selinux
+drwxr-xr-x  2 root root       4096 Feb  9 19:56 sensors.d
+-rw-r--r--  1 root root      10593 Mar 30  2024 sensors3.conf
+-rw-r--r--  1 root root      12813 Mar 27  2021 services
+drwxr-xr-x  2 root root       4096 Feb  9 19:56 sgml
+-rw-r-----  1 root shadow      803 Apr 29 13:41 shadow
+-rw-r-----  1 root shadow      702 Feb  9 19:56 shadow-
+-rw-r--r--  1 root root        132 Feb  9 19:56 shells
+drwxr-xr-x  2 root root       4096 Feb  9 19:54 skel
+drwxr-xr-x  3 root root       4096 Apr 29 13:58 ssh
+drwxr-xr-x  4 root root       4096 Apr 29 13:58 ssl
+-rw-r--r--  1 root root         21 Apr 29 13:41 subgid
+-rw-r--r--  1 root root          0 Feb  9 19:54 subgid-
+-rw-r--r--  1 root root         21 Apr 29 13:41 subuid
+-rw-r--r--  1 root root          0 Feb  9 19:54 subuid-
+-rw-r--r--  1 root root       4343 Apr  8  2024 sudo.conf
+-rw-r--r--  1 root root       9804 Apr  8  2024 sudo_logsrvd.conf
+-r--r-----  1 root root       1800 Jan 29  2024 sudoers
+drwxr-xr-x  2 root root       4096 Apr 29 13:58 sudoers.d
+drwxr-xr-x  2 root root       4096 Feb  9 19:55 supercat
+-rw-r--r--  1 root root       2209 Mar 24  2024 sysctl.conf
+drwxr-xr-x  2 root root       4096 Apr 29 13:58 sysctl.d
+drwxr-xr-x  6 root root       4096 Apr 29 13:58 systemd
+drwxr-xr-x  2 root root       4096 Feb  9 19:54 terminfo
+-rw-r--r--  1 root root         13 May 11 11:21 timezone
+drwxr-xr-x  2 root root       4096 Apr 19  2024 tmpfiles.d
+drwxr-xr-x  2 root root       4096 Apr 29 13:58 ubuntu-advantage
+-rw-r--r--  1 root root       1260 Jan 27  2023 ucf.conf
+drwxr-xr-x  4 root root       4096 Apr 29 13:58 udev
+drwxr-xr-x  3 root root       4096 Feb  9 19:56 update-manager
+drwxr-xr-x  2 root root       4096 Apr 29 13:58 update-motd.d
+lrwxrwxrwx  1 root root         16 Feb  9 19:54 vconsole.conf -> default/keyboard
+drwxr-xr-x  2 root root       4096 Apr 29 13:58 vim
+lrwxrwxrwx  1 root root         23 Feb 26  2024 vtrgb -> /etc/alternatives/vtrgb
+drwxr-xr-x  5 root root       4096 Feb  9 19:56 vulkan
+-rw-r--r--  1 root root       4942 Jun 19  2024 wgetrc
+-rw-r--r--  1 root root        204 Feb  9 19:56 wsl-distribution.conf
+-rw-r--r--  1 root root         44 Apr 29 13:41 wsl.conf
+-rw-r--r--  1 root root        681 Apr  8  2024 xattr.conf
+drwxr-xr-x  5 root root       4096 Feb  9 19:56 xdg
+drwxr-xr-x  2 root root       4096 Apr 29 13:58 xml
+-rw-r--r--  1 root root        460 Jan 20  2023 zsh_command_not_found
 
-main.js:
 
-const {calcularCostoTotal} = require ('./helpers.js');
-const resultado = calcularCostoTotal(150,3);
-console.log(resultado)
+cd ~/practica-precap
+pwd
+/home/ricardo/practica-precap
+echo "OpenClaw practica" > archivo1.txt && cat archivo1.txt
+OpenClaw practica
+cp archivo1.txt archivo2.txt && ls -la
+total 16
+drwxr-xr-x 2 ricardo ricardo 4096 May 11 11:38 .
+drwxr-x--- 4 ricardo ricardo 4096 May  6 15:24 ..
+-rw-r--r-- 1 ricardo ricardo   18 May 11 11:37 archivo1.txt
+-rw-r--r-- 1 ricardo ricardo   18 May 11 11:38 archivo2.txt
+mv archivo2.txt renombrado.txt && ls -la
+total 16
+drwxr-xr-x 2 ricardo ricardo 4096 May 11 11:38 .
+drwxr-x--- 4 ricardo ricardo 4096 May  6 15:24 ..
+-rw-r--r-- 1 ricardo ricardo   18 May 11 11:37 archivo1.txt
+-rw-r--r-- 1 ricardo ricardo   18 May 11 11:38 renombrado.txt
+
+
+
+ls -la ~/practica-precap/
+total 8
+drwxr-xr-x 2 ricardo ricardo 4096 May  1 11:34 .
+drwxr-x--- 4 ricardo ricardo 4096 May  6 15:24 ..
+
+rm renombrado.txt && ls -la
+total 12
+drwxr-xr-x 2 ricardo ricardo 4096 May 11 11:39 .
+drwxr-x--- 4 ricardo ricardo 4096 May  6 15:24 ..
+-rw-r--r-- 1 ricardo ricardo   18 May 11 11:37 archivo1.txt
+
+cd .. && ls -la | grep practica
+drwxr-xr-x 2 ricardo ricardo 4096 May 11 11:39 practica-precap
+
+ls -la ~/practica-precap/
+total 12
+drwxr-xr-x 2 ricardo ricardo 4096 May 11 11:39 .
+drwxr-x--- 4 ricardo ricardo 4096 May  6 15:24 ..
+-rw-r--r-- 1 ricardo ricardo   18 May 11 11:37 archivo1.txt
+
+
+chmod 600 ~/practica-precap/archivo1.txt && ls -la ~/practica-precap/
+total 12
+drwxr-xr-x 2 ricardo ricardo 4096 May 11 11:39 .
+drwxr-x--- 4 ricardo ricardo 4096 May  6 15:24 ..
+-rw------- 1 ricardo ricardo   18 May 11 11:37 archivo1.txt
+
+chmod 644 ~/practica-precap/archivo1.txt && ls -la ~/practica-precap/
+total 12
+drwxr-xr-x 2 ricardo ricardo 4096 May 11 11:39 .
+drwxr-x--- 4 ricardo ricardo 4096 May  6 15:24 ..
+-rw-r--r-- 1 ricardo ricardo   18 May 11 11:37 archivo1.txt
+
+echo $HOME && echo $PATH
+/home/ricardo
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Microsoft SQL Server/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/IncrediBuild:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/ricar/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/ricar/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/ricar/AppData/Local/Programs/Antigravity/bin:/mnt/c/Users/ricar/AppData/Roaming/npm:/mnt/c/Program Files/MongoDB/Server/8.2/bin:/mnt/c/Program Files/MongoDB/mongosh-2.8.1-win32-x64/mongosh-2.8.1-win32-x64/bin:/mnt/c/Program Files/JetBrains/IntelliJ IDEA 2026.1/bin:/mnt/c/Users/ricar/AppData/Local/Programs/Warp/bin:/mnt/c/Users/ricar/.dotnet/tools:/snap/bin
+
+
+export OPENCLAW_TEST=funcionando && echo $OPENCLAW_TEST
+funcionando
+nano ~/.bashrc
+tail -n 3 ~/.bashrc
+fi
+export OPENCLAW_ENV=desarrollo
+
+source ~/.bashrc
+echo $OPENCLAW_ENV
+desarrollo
+
+**/nuevo terminal **/
+echo $OPENCLAW_ENV
+
+desarrollo
+
+
+
+
+
+
+

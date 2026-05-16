@@ -18,7 +18,7 @@ loom:
 
 \- \[X] A — Práctica contenedores: ciclo de vida + imágenes
 
-\- \[ ] B — Práctica redes + volúmenes
+\- \[X] B — Práctica redes + volúmenes
 
-\- \[ ] FINAL — Reflexión + evidencia + Loom
+\- \[X] FINAL — Reflexión + evidencia + Loom
 
